@@ -1,0 +1,60 @@
+{
+  "project": {
+    "name": "WOARU Letterboy",
+    "description": "VS Code/Cursor extension for receiving WOARU CLI messages",
+    "version": "0.1.0",
+    "technology_stack": [
+      "TypeScript",
+      "VS Code Extension API",
+      "Fastify",
+      "Zod",
+      "Vitest",
+      "ESLint",
+      "Prettier"
+    ]
+  },
+  "context_engineering": {
+    "methodology": "Coleam Context Engineering",
+    "rules_file": "CLAUDE.md",
+    "feature_template": "INITIAL.md",
+    "documentation_standards": "JSDoc/TSDoc"
+  },
+  "development": {
+    "package_manager": "pnpm",
+    "node_version": "18.x",
+    "typescript_strict": true,
+    "test_framework": "vitest",
+    "linting": {
+      "eslint": true,
+      "prettier": true,
+      "husky_hooks": true
+    }
+  },
+  "architecture": {
+    "entry_point": "src/extension.ts",
+    "core_modules": [
+      "MessageListener.ts",
+      "CursorService.ts",
+      "Formatter.ts",
+      "StatusBarManager.ts"
+    ],
+    "patterns": [
+      "Dependency Injection",
+      "Event-driven Architecture",
+      "Separation of Concerns"
+    ]
+  },
+  "quality_gates": {
+    "typescript_compilation": true,
+    "eslint_passing": true,
+    "tests_passing": true,
+    "security_audit": true,
+    "documentation_complete": true
+  },
+  "deployment": {
+    "build_command": "pnpm run build",
+    "package_command": "pnpm run package",
+    "ci_cd": "GitHub Actions",
+    "artifact": ".vsix file"
+  }
+}

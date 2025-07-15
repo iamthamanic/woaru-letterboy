@@ -1,0 +1,14 @@
+out/
+node_modules/
+*.vsix
+.vscode-test/
+.vscode-test-web/
+*.log
+.DS_Store
+.env
+.env.local
+.env.production.local
+.env.test.local
+coverage/
+dist/
+build/

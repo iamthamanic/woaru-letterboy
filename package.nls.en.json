@@ -1,0 +1,19 @@
+{
+  "message.title": "Message from WOARU",
+  "message.error.in": "Error in",
+  "message.line": "Line",
+  "message.rule": "Rule",
+  "message.problem": "Problem",
+  "message.suggestion": "Suggestion",
+  "warning.no.active.editor": "WOARU Letterboy: No active text file found. Please click in a chat window.",
+  "error.insert.message": "WOARU Letterboy: Error inserting message: {0}",
+  "status.listening": "WOARU Letterboy: Port {0}",
+  "status.inactive": "WOARU Letterboy: Inactive",
+  "status.error": "WOARU Letterboy: Port Error",
+  "status.listening.tooltip": "WOARU Letterboy is listening on port {0}. Click to show logs.",
+  "status.inactive.tooltip": "WOARU Letterboy is not listening. Click to show logs.",
+  "status.error.tooltip": "WOARU Letterboy encountered an error. Click to show logs.",
+  "info.server.started": "WOARU Letterboy is now listening on port {0}",
+  "error.port.in.use": "WOARU Letterboy: Port {0} is already in use. Please close other applications or change the port in settings.",
+  "error.server.start": "WOARU Letterboy: Failed to start: {0}"
+}

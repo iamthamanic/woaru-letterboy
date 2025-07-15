@@ -1,0 +1,54 @@
+{
+  "commands": [
+    {
+      "name": "analyze-code",
+      "description": "Analyze WOARU Letterboy codebase for patterns and architecture",
+      "prompt": "Analyze the WOARU Letterboy codebase. Focus on:\n1. Architecture patterns and design decisions\n2. Code quality and adherence to CLAUDE.md rules\n3. Potential improvements or issues\n4. Dependencies and their usage\n5. Test coverage and quality\n\nProvide specific recommendations for improvements."
+    },
+    {
+      "name": "feature-planning",
+      "description": "Plan implementation of new features using INITIAL.md template",
+      "prompt": "I want to implement a new feature for WOARU Letterboy. Help me create a comprehensive INITIAL.md file by:\n1. Analyzing the current codebase structure\n2. Understanding the existing patterns\n3. Identifying integration points\n4. Considering security and performance implications\n5. Creating detailed implementation plan\n\nFeature description: {feature_description}"
+    },
+    {
+      "name": "debug-extension",
+      "description": "Debug WOARU Letterboy extension issues",
+      "prompt": "Help me debug a WOARU Letterboy extension issue. Please:\n1. Review the error logs and symptoms\n2. Check against CLAUDE.md rules for common issues\n3. Analyze the relevant source code\n4. Provide step-by-step debugging approach\n5. Suggest fixes with code examples\n\nIssue description: {issue_description}"
+    },
+    {
+      "name": "review-pr",
+      "description": "Review pull request against CLAUDE.md standards",
+      "prompt": "Review this pull request for WOARU Letterboy against our CLAUDE.md standards:\n1. Code quality and TypeScript usage\n2. Adherence to security rules\n3. Test coverage and quality\n4. Documentation completeness\n5. Performance implications\n6. Breaking changes assessment\n\nPR description: {pr_description}"
+    },
+    {
+      "name": "update-docs",
+      "description": "Update project documentation",
+      "prompt": "Update WOARU Letterboy documentation based on recent changes:\n1. Review README.md for accuracy\n2. Update API documentation\n3. Check configuration examples\n4. Verify troubleshooting guides\n5. Update CONTRIBUTING.md if needed\n\nChanges made: {changes_description}"
+    },
+    {
+      "name": "security-audit",
+      "description": "Perform security audit of the extension",
+      "prompt": "Perform a comprehensive security audit of WOARU Letterboy:\n1. Check HTTP server security (localhost binding, validation)\n2. Review input validation with Zod schemas\n3. Analyze error handling and information leakage\n4. Check for dependency vulnerabilities\n5. Review VS Code API usage for security implications\n\nProvide specific security recommendations."
+    },
+    {
+      "name": "performance-check",
+      "description": "Analyze performance characteristics",
+      "prompt": "Analyze WOARU Letterboy performance:\n1. HTTP server response times\n2. Memory usage patterns\n3. CPU usage during message processing\n4. VS Code API call efficiency\n5. Extension startup time\n\nProvide optimization recommendations with specific code suggestions."
+    },
+    {
+      "name": "refactor-guidance",
+      "description": "Provide refactoring guidance for code improvements",
+      "prompt": "Provide refactoring guidance for WOARU Letterboy:\n1. Identify code smells and anti-patterns\n2. Suggest architectural improvements\n3. Recommend better separation of concerns\n4. Identify opportunities for code reuse\n5. Propose TypeScript type improvements\n\nTarget area: {target_area}"
+    },
+    {
+      "name": "test-strategy",
+      "description": "Develop testing strategy for new features",
+      "prompt": "Develop a comprehensive testing strategy:\n1. Identify testable components and functions\n2. Suggest unit test scenarios\n3. Design integration test cases\n4. Recommend mocking strategies for VS Code API\n5. Create end-to-end test scenarios\n\nFeature/Component: {component_description}"
+    },
+    {
+      "name": "release-preparation",
+      "description": "Prepare for release using pre-release checklist",
+      "prompt": "Prepare WOARU Letterboy for release:\n1. Review pre-release checklist completion\n2. Verify all tests pass\n3. Check documentation updates\n4. Validate .vsix package\n5. Review breaking changes\n6. Suggest release notes content\n\nRelease type: {release_type} (patch/minor/major)"
+    }
+  ]
+}

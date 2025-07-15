@@ -1,0 +1,75 @@
+{
+  "name": "woaru-letterboy",
+  "displayName": "WOARU Letterboy",
+  "description": "A lightweight VS Code/Cursor extension that acts as a local server to receive error and analysis messages from the WOARU CLI tool",
+  "version": "0.1.0",
+  "publisher": "woaru",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamthamanic/woaru-letterboy"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "woaru-letterboy.showLogs",
+        "title": "Show Logs",
+        "category": "WOARU Letterboy"
+      }
+    ],
+    "configuration": {
+      "title": "WOARU Letterboy",
+      "properties": {
+        "woaru-letterboy.port": {
+          "type": "number",
+          "default": 38001,
+          "description": "The port on which the server listens for messages from WOARU CLI"
+        },
+        "woaru-letterboy.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether the extension should automatically start when VS Code starts"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src --ext ts --fix",
+    "test": "vitest",
+    "package": "@vscode/vsce package",
+    "build": "pnpm run compile && pnpm run package",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vscode/test-electron": "^2.3.0",
+    "eslint": "^8.0.0",
+    "husky": "^8.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "@vscode/vsce": "^2.15.0",
+    "vitest": "^0.34.0"
+  },
+  "dependencies": {
+    "fastify": "^4.0.0",
+    "vscode-nls": "^5.2.0",
+    "zod": "^3.22.0"
+  },
+  "packageManager": "pnpm@10.11.0"
+}
