@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main, master, develop]
   pull_request:
-    branches: [main, develop]
+    branches: [main, master, develop]
 
 jobs:
   test:
@@ -52,7 +52,7 @@ jobs:
         run: pnpm run compile
         
       - name: Run tests
-        run: pnpm run test
+        run: pnpm run test -- --reporter=verbose
         
       - name: Build extension
         run: pnpm run package

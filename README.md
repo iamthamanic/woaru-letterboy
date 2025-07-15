@@ -1,6 +1,15 @@
 # WOARU Letterboy
 
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/iamthamanic/woaru-letterboy/releases/tag/v1.0.0)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![VS Code](https://img.shields.io/badge/VS%20Code-1.74.0%2B-blue.svg)](https://code.visualstudio.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-18.x%2B-green.svg)](https://nodejs.org/)
+
 Eine leichtgewichtige VS Code / Cursor-Erweiterung, die als lokaler Server agiert, um Fehler- und Analyse-Nachrichten vom "WOARU"-CLI-Tool zu empfangen. Letterboy formatiert diese Nachrichten und fügt sie nahtlos und in Echtzeit in das aktive Chat-Fenster von Cursor ein, um einen vollautomatischen Feedback-Loop zu schaffen.
+
+## 🎉 Version 1.0.0 - Stable Release
+
+Dies ist die erste stabile Version von WOARU Letterboy mit vollständiger Funktionalität, umfassendem Test-Coverage und produktionsreifer Qualität.
 
 ## 🚀 Features
 
@@ -22,7 +31,7 @@ Eine leichtgewichtige VS Code / Cursor-Erweiterung, die als lokaler Server agier
 ### Aus .vsix-Datei installieren
 
 ```bash
-code --install-extension woaru-letterboy-0.1.0.vsix
+code --install-extension woaru-letterboy-1.0.0.vsix
 ```
 
 ### Aus dem Quellcode entwickeln
@@ -254,11 +263,29 @@ Siehe [CONTRIBUTING.md](CONTRIBUTING.md) für Entwicklungsrichtlinien.
 - **Issues**: [GitHub Issues](https://github.com/iamthamanic/woaru-letterboy/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/iamthamanic/woaru-letterboy/discussions)
 
+## 📈 Versionsverlauf
+
+WOARU Letterboy verwendet ein erweiterte Semantic Versioning System:
+
+- **MAJOR.MINOR.PATCH** (z.B. 1.2.3)
+- Versionen gehen von 0.0.0 bis 9.9.9
+- Nach 3.9.0 würde bei einem Minor-Update 4.0.0 kommen
+- Nach 9.9.9 kommt ein neuer Modellname mit Buchstaben: A.0.0.0
+- Nach A.9.9.9 folgt B.1.0.0
+
+### Releases
+
+- **1.0.0** (2025-07-15): Erster stabiler Release mit vollständiger Funktionalität
+- **0.1.0** (2025-07-15): Initiale Entwicklungsversion
+
+Vollständige Änderungen: [CHANGELOG.md](CHANGELOG.md)
+
 ## 🔗 Links
 
 - [WOARU CLI Documentation](https://github.com/iamthamanic/woaru)
 - [VS Code Extension API](https://code.visualstudio.com/api)
 - [Cursor Editor](https://cursor.sh)
+- [Release Notes](https://github.com/iamthamanic/woaru-letterboy/releases)
 
 ---
 
