@@ -18,5 +18,5 @@ module.exports = {
     'prefer-const': 'error',
     'no-var': 'error',
   },
-  ignorePatterns: ['out', 'dist', '**/*.d.ts'],
+  ignorePatterns: ['out', 'dist', '**/*.d.ts', 'src/test/**/*'],
 };
